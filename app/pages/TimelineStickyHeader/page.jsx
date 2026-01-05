@@ -1,0 +1,183 @@
+'use client';
+
+// Fix import: alias ExperienceData as TimelineData
+import { TimelineStickyHeader as TimelineData } from './../../components/TimelineData';
+
+export default function TimelineStickyHeader() {
+  return (
+    <section className="bg-sky-50 py-20">
+      <div className="w-full">
+       <div
+          className="
+            w-full flex flex-col text-black relative
+            after:absolute
+            after:content-['']
+            after:block
+            after:h-full
+            after:w-0.5
+            after:bg-gray-500
+            xl:after:left-1/2
+            sm:after:left-10
+            after:left-10
+            after:top-4
+            after:-translate-x-1/2
+            after:opacity-50
+            after:z-10
+          "
+        >
+          {/* Desktop View */}
+          <div className="w-full hidden sm:hidden xl:block">
+            {TimelineData.map((timeline, index) => {
+              const isEven = index % 2 === 0;
+              return (
+                <div key={timeline.id} className="w-full flex gap-10 xl:gap-30 p-10 items-start relative mb-10">
+                  {/* Center Icon */}
+    
+
+                  {isEven ? (
+                    <>
+                      {/* LEFT – Company Info */}
+                      <div className="w-full h-full sticky top-20">
+                        <div className="flex justify-end text-end w-full">
+                          <div  style={{ maxWidth: '800px'}}>
+                            <h1 className="text-3xl font-bold">{timeline.company}</h1>
+                            <div className="text-gray-700">{timeline.year}</div>
+                            <div className="text-gray-700">{timeline.position}</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="w-auto sticky top-20 text-center z-20">
+                        <span className="text-gray-400 text-4xl">●</span>
+                      </div>
+                      
+                      {/* RIGHT – Description */}
+                      <div className="w-full ">
+                        <div className="w-full p-10 shadow rounded-2xl relative bg-gray-50" >
+                          <div className="w-full mb-5">
+                            {Array.isArray(timeline.description) ? (
+                              <ul className="space-y-2">
+                                {timeline.description.map((item, idx) => (
+                                  <li key={idx} className="flex items-start gap-2">
+                                    <span>●</span>
+                                    <p className="text-gray-700">{item}</p>
+                                  </li>
+                                ))}
+                              </ul>
+                            ) : (
+                              <p className="text-gray-700">{timeline.description}</p>
+                            )}
+                          </div>
+                          <div className="w-full relative overflow-hidden">
+                            <img
+                              src={timeline.image}
+                              alt="timeline image"
+                              className="w-full h-auto object-cover rounded-xl"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  ) : 
+                  (
+                    <>
+                      {/* LEFT – Description */}
+                       <div className="w-full ">
+                        <div className="w-full flex justify-end">
+                          <div className="w-full p-10 shadow rounded-2xl relative bg-gray-50">
+                            <div className="w-full mb-5">
+                              {Array.isArray(timeline.description) ? (
+                                <ul className="space-y-2">
+                                  {timeline.description.map((item, idx) => (
+                                    <li key={idx} className="flex items-start gap-2">
+                                      <span>●</span>
+                                      <p className="text-gray-700">{item}</p>
+                                    </li>
+                                  ))}
+                                </ul>
+                              ) : (
+                                <p className="text-gray-700">{timeline.description}</p>
+                              )}
+                            </div>
+                            <div className="w-full relative overflow-hidden">
+                              <img
+                                src={timeline.image}
+                                alt="timeline image"
+                                className="w-full h-auto object-cover rounded-xl"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="w-auto sticky top-20 text-center z-20">
+                        <span className=" text-gray-400 text-4xl">●</span>
+                      </div>
+
+                      {/* RIGHT – Company Info */}
+                      <div className="w-full h-full sticky top-20">
+                        <div className="text-start w-full">
+                          <h1 className="text-3xl font-bold">{timeline.company}</h1>
+                          <div className="text-gray-700">{timeline.year}</div>
+                          <div className="text-gray-700">{timeline.position}</div>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+
+          {/* Mobile View */}
+          <div className="w-full sm:block xl:hidden pl-20 pr-10">
+            {TimelineData.map((exper, index) => {
+              return (
+                <div key={exper.id} className="w-full relative mb-10">
+                  {/* Center Icon */}
+                  <span className="absolute -left-10 top-4 -translate-x-1/2 -translate-y-1/2 text-gray-400 text-4xl z-20">
+                    ●
+                  </span>
+
+                  <div className='w-full mb-20'>
+                    <div className="flex mb-5">
+                      <div className='w-full'>
+                        <h1 className="text-3xl font-bold">{exper.company}</h1>
+                        <div className="text-gray-700">{exper.year}</div>
+                        <div className="text-gray-700">{exper.position}</div>
+                      </div>
+                    </div>
+
+                    <div className="w-full p-10 shadow rounded-2xl relative bg-gray-50 mb-5">
+                      {Array.isArray(exper.description) ? (
+                        <ul className="space-y-2">
+                          {exper.description.map((item, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <span>●</span>
+                              <p className="text-gray-700">{item}</p>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="text-gray-700">{exper.description}</p>
+                      )}
+                    </div>
+
+                    <div className="w-full relative overflow-hidden">
+                      <img
+                        src={exper.image}
+                        alt="timeline image"
+                        className="w-full h-auto object-cover rounded-xl"
+                      />
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

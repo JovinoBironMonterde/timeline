@@ -1,7 +1,16 @@
-import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+// import type { NextConfig } from "next";
 
-export default nextConfig;
+// const nextConfig: NextConfig = {
+//   /* config options here */
+// };
+
+// export default nextConfig;
+
+
+
+module.exports = {
+  images: {
+    domains: ['images.pexels.com'],
+  },
+}

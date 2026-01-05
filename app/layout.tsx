@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex min-h-screen bg-white">
         <Sidebar />
-        <main className="relative flex-1 p-6">{children}</main>
+        <main className="relative flex-1 p-2 xl:p-6">{children}</main>
       </body>
     </html>
   );

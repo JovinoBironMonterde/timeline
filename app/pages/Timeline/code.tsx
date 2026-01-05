@@ -2,24 +2,27 @@
 
 import { useState } from 'react';
 import CodeBlock from '../../components/CodeBlock';
+import { TimeLineData } from './../../components/TimelineData';
 
-export default function TabsLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const [active, setActive] = useState<'preview' | 'code'>('preview');
+export default function TabsLayout({ children }: { children: React.ReactNode }) {
+  const [active, setActive] = useState<'preview' | 'code' | 'data'>('preview');
+
+  const dataCode = `export const TimeLineData = ${JSON.stringify(
+    TimeLineData,
+    null,
+    2
+  )};`;
 
   return (
     <div className="w-full">
       {/* Tabs */}
-      <div className="flex border-b  sticky top-0 bg-amber-50 z-50 mb-6">
+      <div className="flex justify-end sticky top-0 mb-2 z-50 bg-gray-400">
         <button
           onClick={() => setActive('preview')}
-          className={`px-4 py-2 text-sm font-medium ${
+          className={`px-4 py-3 cursor-pointer text-md font-medium ${
             active === 'preview'
               ? 'border-b-2 border-blue-500 text-blue-600'
-              : 'text-gray-500'
+              : 'text-gray-900'
           }`}
         >
           Preview
@@ -27,13 +30,24 @@ export default function TabsLayout({
 
         <button
           onClick={() => setActive('code')}
-          className={`px-4 py-2 text-sm font-medium ${
+          className={`px-4 py-3 cursor-pointer text-md font-medium ${
             active === 'code'
               ? 'border-b-2 border-blue-500 text-blue-600'
-              : 'text-gray-500'
+              : 'text-gray-900'
           }`}
         >
           Code
+        </button>
+
+        <button
+          onClick={() => setActive('data')}
+          className={`px-4 py-3 cursor-pointer text-md font-medium ${
+            active === 'data'
+              ? 'border-b-2 border-blue-500 text-blue-600'
+              : 'text-gray-900'
+          }`}
+        >
+          Data
         </button>
       </div>
 
@@ -41,18 +55,12 @@ export default function TabsLayout({
       {active === 'preview' && children}
 
       {active === 'code' && (
-        <CodeBlock
-          code={`
+        <CodeBlock code={`
 'use client';
 
-import * as React from 'react';
-import Image from 'next/image';
-
-
-// Fix import: alias ExperienceData as TimelineData
 import { TimeLineData as TimelineData } from './../../components/TimelineData';
 
-export default function ProfilePage() {
+export default function TimelinePage() {
   return (
     <section className="bg-sky-50 py-20">
       <div className="w-full Experience-Wrapper">
@@ -156,8 +164,11 @@ export default function ProfilePage() {
   );
 }
 
-        `}
-        />
+          `} />
+      )}
+
+      {active === 'data' && (
+        <CodeBlock code={dataCode} />
       )}
     </div>
   );

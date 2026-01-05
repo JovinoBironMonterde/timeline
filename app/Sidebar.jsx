@@ -11,7 +11,7 @@ export default function Sidebar() {
       {/* Mobile menu button */}
       <button
         className="
-          fixed top-4 left-4 z-50
+          fixed top-3 left-4 z-50
           md:hidden
           p-2 rounded-md bg-gray-100 shadow
         "
@@ -63,6 +63,16 @@ export default function Sidebar() {
           <li>
             <Link href="/pages/TimelineWithImage" onClick={() => setOpen(false)}>
               Timeline With Image
+            </Link>
+          </li>
+          <li>
+            <Link href="/pages/TimelineStickyHeader" onClick={() => setOpen(false)}>
+              Timeline Sticky Header
+            </Link>
+          </li>
+                    <li>
+            <Link href="/pages/TimelineVerticalCarousel" onClick={() => setOpen(false)}>
+              TimelineVerticalCarousel
             </Link>
           </li>
         </ul>

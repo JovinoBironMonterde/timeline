@@ -2,13 +2,13 @@
 
 import { useState } from 'react';
 import CodeBlock from '../../components/CodeBlock';
-import { TimeLineDataWithImage } from './../../components/TimelineData';
+import { TimelineStickyHeader } from './../../components/TimelineData';
 
 export default function TabsLayout({ children }: { children: React.ReactNode }) {
   const [active, setActive] = useState<'preview' | 'code' | 'data'>('preview');
 
-  const dataCode = `export const TimeLineDataWithImage = ${JSON.stringify(
-    TimeLineDataWithImage,
+  const dataCode = `export const TimelineStickyHeader = ${JSON.stringify(
+    TimelineStickyHeader,
     null,
     2
   )};`;
@@ -60,7 +60,7 @@ export default function TabsLayout({ children }: { children: React.ReactNode }) 
 
 import { TimeLineDataWithImage as TimelineData } from './../../components/TimelineData';
 
-export default function TimelineWithImage() {
+export default function TimelineStickyHeader() {
   return (
     <section className="bg-sky-50 py-20">
       <div className="w-full">

@@ -16,7 +16,7 @@ export default function TabsLayout({ children }: { children: React.ReactNode }) 
   return (
     <div className="w-full">
       {/* Tabs */}
-      <div className="flex justify-end sticky top-0 mb-2 z-50 bg-gray-400">
+      <div className="flex justify-end sticky top-0 mb-2 z-30 bg-gray-400">
         <button
           onClick={() => setActive('preview')}
           className={`px-4 py-3 cursor-pointer text-md font-medium ${

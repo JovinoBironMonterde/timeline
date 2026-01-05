@@ -5,7 +5,7 @@ import TabsLayout from './code';
 export default function TimelineLayout({ children }) {
   const filePath = path.join(
     process.cwd(),
-    'app/pages/TimelineWithList/page.jsx'
+    'app/pages/TimelineVerticalCarousel/page.jsx'
   );
 
   const code = fs.readFileSync(filePath, 'utf8');

@@ -7,7 +7,7 @@ import Image from 'next/image';
 // Fix import: alias ExperienceData as TimelineData
 import { TimeLineData as TimelineData } from './../../components/TimelineData';
 
-export default function ProfilePage() {
+export default function TimelinePage() {
   return (
     <section className="bg-sky-50 py-20">
       <div className="w-full Experience-Wrapper">
