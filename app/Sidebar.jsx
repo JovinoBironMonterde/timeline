@@ -11,9 +11,9 @@ export default function Sidebar() {
       {/* Mobile menu button */}
       <button
         className="
-          fixed top-3 left-4 z-50
+          fixed top-2 left-2 z-50
           md:hidden
-          p-2 rounded-md bg-gray-100 shadow
+          px-2 py-1 rounded-md bg-gray-100 shadow
         "
         onClick={() => setOpen(true)}
         aria-label="Open menu"
@@ -49,7 +49,7 @@ export default function Sidebar() {
 
         <h2 className="text-xl font-bold mb-6">Sidebar</h2>
 
-        <ul className="space-y-3">
+        <ul className="space-y-3 text-black">
           <li>
             <Link href="/pages/Timeline" onClick={() => setOpen(false)}>
               Timeline

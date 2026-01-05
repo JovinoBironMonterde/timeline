@@ -9,7 +9,7 @@ import { TimeLineDataWithImage as TimelineData } from './../../components/Timeli
 
 export default function TimelineWithImage() {
   return (
-    <section className="bg-sky-50 py-20">
+    <section className="bg-sky-50 mx-2 py-20">
       <div className="w-full">
        <div
           className="
@@ -21,8 +21,7 @@ export default function TimelineWithImage() {
             after:w-0.5
             after:bg-gray-500
             xl:after:left-1/2
-            sm:after:left-10
-            after:left-10
+            after:left-6
             after:top-4
             after:-translate-x-1/2
             after:opacity-50
@@ -118,12 +117,12 @@ export default function TimelineWithImage() {
             })}
           </div>
           {/* Mobile View */}
-          <div className="w-full sm:block xl:hidden pl-20 pr-10">
+          <div className="w-full sm:block xl:hidden pl-14 pr-4 xl:pl-20 xl:pr-10">
             {TimelineData.map((exper, index) => {
               return (
                 <div key={exper.id} className="w-full relative mb-10">
                   {/* Center Icon */}
-                  <span className="absolute -left-10 top-4 -translate-x-1/2 -translate-y-1/2 text-gray-400 text-4xl z-20">
+                  <span className="absolute -left-8 top-4 -translate-x-1/2 -translate-y-1/2 text-gray-400 text-4xl z-20">
                     ●
                   </span>
 

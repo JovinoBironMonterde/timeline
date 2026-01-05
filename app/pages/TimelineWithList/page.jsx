@@ -9,7 +9,7 @@ import { TimeLineDataWithList as TimelineData } from './../../components/Timelin
 
 export default function TimeLineDataWithListPage() {
   return (
-    <section className="bg-sky-50 py-20">
+    <section className="bg-sky-50 mx-2 py-20">
       <div className="w-full Experience-Wrapper">
           <div
             className="
@@ -21,9 +21,8 @@ export default function TimeLineDataWithListPage() {
               after:w-0.5
               after:bg-gray-500
               xl:after:left-1/2
-              sm:after:left-10
-              after:left-10
-              after:top-0
+              after:left-6
+              after:top-4
               after:-translate-x-1/2
               after:opacity-50
               after:z-10
@@ -101,12 +100,12 @@ export default function TimeLineDataWithListPage() {
           </div>
 
           {/* Mobile View */}
-          <div className="w-full sm:block xl:hidden pl-20 pr-10">
+          <div className="w-full sm:block xl:hidden pl-14 pr-4 xl:pl-20 xl:pr-10">
             {TimelineData.map((timeline, index) => {
               return (
                 <div key={timeline.id} className="w-full relative mb-10">
                   {/* Center Icon */}
-                  <span className="absolute -left-10 top-14 -translate-x-1/2 -translate-y-1/2 text-gray-400 text-4xl z-20">
+                  <span className="absolute -left-8 top-4 -translate-x-1/2 -translate-y-1/2 text-gray-400 text-4xl z-20">
                     ●
                   </span>
 

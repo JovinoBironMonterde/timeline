@@ -131,12 +131,12 @@ export default function TimelineStickyHeader() {
 
 
           {/* Mobile View */}
-          <div className="w-full sm:block xl:hidden pl-20 pr-10">
+          <div className="w-full sm:block xl:hidden pl-14 pr-4 xl:pl-20 xl:pr-10">
             {TimelineData.map((exper, index) => {
               return (
                 <div key={exper.id} className="w-full relative mb-10">
                   {/* Center Icon */}
-                  <span className="absolute -left-10 top-4 -translate-x-1/2 -translate-y-1/2 text-gray-400 text-4xl z-20">
+                  <span className="absolute -left-8 top-4 -translate-x-1/2 -translate-y-1/2 text-gray-400 text-4xl z-20">
                     ●
                   </span>
 
