@@ -9,7 +9,7 @@ import { TimeLineDataWithImage as TimelineData } from './../../components/Timeli
 
 export default function TimelineWithImage() {
   return (
-    <section className="bg-sky-50 mx-2 py-20">
+    <section className="bg-sky-50 mx-2 py-10 xl:py-20">
       <div className="w-full">
        <div
           className="

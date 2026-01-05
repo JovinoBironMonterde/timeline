@@ -5,24 +5,23 @@ import { TimelineStickyHeader as TimelineData } from './../../components/Timelin
 
 export default function TimelineStickyHeader() {
   return (
-    <section className="bg-sky-50 py-20">
+    <section className="bg-sky-50 mx-2 py-10 xl:py-20">
       <div className="w-full">
        <div
           className="
-            w-full flex flex-col text-black relative
-            after:absolute
-            after:content-['']
-            after:block
-            after:h-full
-            after:w-0.5
-            after:bg-gray-500
-            xl:after:left-1/2
-            sm:after:left-10
-            after:left-10
-            after:top-4
-            after:-translate-x-1/2
-            after:opacity-50
-            after:z-10
+              w-full flex flex-col text-black relative
+              after:absolute
+              after:content-['']
+              after:block
+              after:h-full
+              after:w-0.5
+              after:bg-gray-500
+              xl:after:left-1/2
+              after:left-6
+              after:top-4
+              after:-translate-x-1/2
+              after:opacity-50
+              after:z-10
           "
         >
           {/* Desktop View */}

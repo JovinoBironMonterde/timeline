@@ -9,7 +9,7 @@ import { TimeLineDataWithList as TimelineData } from './../../components/Timelin
 
 export default function TimeLineDataWithListPage() {
   return (
-    <section className="bg-sky-50 mx-2 py-20">
+    <section className="bg-sky-50 mx-2 py-10 xl:py-20">
       <div className="w-full Experience-Wrapper">
           <div
             className="
