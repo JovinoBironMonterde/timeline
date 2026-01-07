@@ -75,6 +75,11 @@ export default function Sidebar() {
               TimelineVerticalCarousel
             </Link>
           </li>
+                        <li>
+            <Link href="/pages/TimelineTwoColumn" onClick={() => setOpen(false)}>
+              TimelineTwoColumn
+            </Link>
+          </li>
         </ul>
       </aside>
     </>

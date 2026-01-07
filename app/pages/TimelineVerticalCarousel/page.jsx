@@ -18,7 +18,7 @@ export default function TimelineVerticalCarousel() {
     )
 
   return (
-    <section className='w-full h-[90vh] flex items-center'>
+    <section className='w-full h-[90vh] flex items-center px-4'>
       <div className="relative mx-auto flex w-full xl:w-[70%] h-[420px] items-center gap-4 xl:gap-12 overflow-hidden">
         {/* Timeline */}
         <div className="relative flex h-full flex-col items-center">

@@ -4,10 +4,9 @@ import * as React from 'react';
 import Image from 'next/image';
 
 
-// Fix import: alias ExperienceData as TimelineData
 import { TimeLineDataWithList as TimelineData } from './../../components/TimelineData';
 
-export default function TimeLineDataWithListPage() {
+export default function TimeLineDataWithList() {
   return (
     <section className="bg-sky-50 mx-2 py-10 xl:py-20">
       <div className="w-full Experience-Wrapper">

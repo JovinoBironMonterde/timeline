@@ -11,7 +11,7 @@ export default function TimelinePage() {
   return (
     <section className="bg-sky-50 mx-2 py-10 xl:py-20">
       <div className="w-full Experience-Wrapper">
-          <div
+          <div 
             className="
               w-full flex flex-col text-black relative
               after:absolute
