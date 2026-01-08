@@ -14,7 +14,7 @@ export default function TabsLayout({ children }: { children: React.ReactNode }) 
   )};`;
 
   return (
-    <div className="w-[100vw] overflow-x-auto">
+    <div className="w-[100vw] relative">
       {/* Tabs */}
       <div className="flex justify-end sticky top-0 mb-2 z-30 bg-gray-400">
         <button

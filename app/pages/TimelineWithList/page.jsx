@@ -109,15 +109,15 @@ export default function TimeLineDataWithList() {
                   </span>
 
                   <div className='w-full'>
-                    <div className="flex ">
+                    <div className="flex mb-2">
                       <div  style={{ maxWidth: '850px'}}>
-                        <h1 className="text-3xl font-bold">{timeline.company}</h1>
+                        <h1 className="text-xl xl:text-3xl font-bold mb-2">{timeline.company}</h1>
                         <div className="text-gray-700">{timeline.year}</div>
                         <div className="text-gray-700">{timeline.position}</div>
                       </div>
                     </div>
 
-                    <div className="w-full p-10 shadow rounded-2xl relative bg-gray-50"  style={{ maxWidth: '850px'}}>
+                    <div className="w-full p-4 shadow rounded-2xl relative bg-gray-50"  style={{ maxWidth: '850px'}}>
                       {Array.isArray(timeline.description) ? (
                         <ul className="space-y-2">
                           {timeline.description.map((item, idx) => (

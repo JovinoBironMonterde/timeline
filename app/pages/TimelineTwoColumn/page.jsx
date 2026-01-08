@@ -8,7 +8,7 @@ export default function TimelineTwoColumn() {
   const rightColumnData = TimelineData.filter(item => item.id > 3);
 
   return (
-    <section className="bg-gray-200 mx-2 p-10 xl:p-20">
+    <section className="bg-gray-200 xl:mx-2 p-4 xl:p-20">
       <div className="w-full flex flex-col lg:flex-row gap-0 lg:gap-10">
         
         {/* LEFT COLUMN */}

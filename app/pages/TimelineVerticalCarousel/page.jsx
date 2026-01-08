@@ -89,7 +89,7 @@ export default function TimelineVerticalCarousel() {
                 }}
               >
                 <div className="h-full w-full block xl:flex items-center gap-4 justify-center">
-                  <div className="relative h-[200px] xl:h-full w-full xl:w-[400px] flex items-center overflow-hidden rounded-lg">
+                  <div className="relative mb-2 h-[200px] xl:h-full w-full xl:w-[400px] flex items-center overflow-hidden rounded-lg">
                     <img
                       src={item.image}
                       alt={item.company}
@@ -97,7 +97,7 @@ export default function TimelineVerticalCarousel() {
                     />
                   </div>
                   <div className="w-full">
-                    <h2 className="mb-4 text-2xl font-semibold">
+                    <h2 className="mb-4 text-xl xl:text-3xl font-semibold">
                       {item.company}
                     </h2>
 

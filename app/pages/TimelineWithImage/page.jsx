@@ -127,15 +127,15 @@ export default function TimelineWithImage() {
                   </span>
 
                   <div className='w-full mb-20'>
-                    <div className="flex mb-5">
+                    <div className="flex mb-2">
                       <div className='w-full'>
-                        <h1 className="text-3xl font-bold">{exper.company}</h1>
+                        <h1 className="text-xl xl:text-3xl font-bold mb-2">{exper.company}</h1>
                         <div className="text-gray-700">{exper.year}</div>
                         <div className="text-gray-700">{exper.position}</div>
                       </div>
                     </div>
 
-                    <div className="w-full p-10 shadow rounded-2xl relative bg-gray-50 mb-5">
+                    <div className="w-full p-4 shadow rounded-2xl relative bg-gray-50 mb-5">
                       <p className="text-gray-700">{exper.description}</p>
                     </div>
 

@@ -2,19 +2,19 @@
 
 import { useState } from 'react';
 import CodeBlock from '../../components/CodeBlock';
-import { TimeLineData } from './../../components/TimelineData';
+import { TimelineWithProgressBar } from './../../components/TimelineData';
 
 export default function TabsLayout({ children }: { children: React.ReactNode }) {
   const [active, setActive] = useState<'preview' | 'code' | 'data'>('preview');
 
-  const dataCode = `export const TimeLineData = ${JSON.stringify(
-    TimeLineData,
+  const dataCode = `export const TimelineWithProgressBar = ${JSON.stringify(
+    TimelineWithProgressBar,
     null,
     2
   )};`;
 
   return (
-    <div className="w-[100vw] overflow-x-auto">
+    <div className="w-[100vw] relative">
       {/* Tabs */}
       <div className="flex justify-end sticky top-0 mb-2 z-30 bg-gray-400">
         <button
