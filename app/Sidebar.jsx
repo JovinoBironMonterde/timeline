@@ -80,6 +80,11 @@ export default function Sidebar() {
               TimelineTwoColumn
             </Link>
           </li>
+                             <li>
+            <Link href="/pages/TimelineWithCircularBar" onClick={() => setOpen(false)}>
+              TimelineWithCircularBar
+            </Link>
+          </li>
         </ul>
       </aside>
     </>

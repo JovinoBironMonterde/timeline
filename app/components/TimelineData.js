@@ -291,3 +291,43 @@ export const TimelineTwoColumnData = [
   }
 
 ]
+
+export const TimelineWithProgressBar = [
+  {
+    id: 1,
+    percentage: "30%",
+    title: "Lorem Ipsum Corp",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+    {
+    id: 2,
+    percentage: "45%",
+    title: "Lorem Ipsum Corp",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+    {
+    id: 3,
+    percentage: "20%",
+    title: "Lorem Ipsum Corp",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+    {
+    id: 4,
+    percentage: "80%",
+    title: "Lorem Ipsum Corp",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+    {
+    id: 5,
+    percentage: "30%",
+    title: "Lorem Ipsum Corp",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+    {
+    id: 6,
+    percentage: "60%",
+    title: "Lorem Ipsum Corp",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  }
+
+]
