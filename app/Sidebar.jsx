@@ -13,7 +13,7 @@ export default function Sidebar() {
         className="
           fixed top-2 left-2 z-50
           md:hidden
-          px-2 py-1 rounded-md bg-gray-100 shadow
+          px-2 py-1 rounded-md text-gray-600 bg-gray-100 shadow
         "
         onClick={() => setOpen(true)}
         aria-label="Open menu"

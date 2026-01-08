@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-
 import { TimelineVerticalCarouselData as TimelineData } from './../../components/TimelineData';
 
 export default function TimelineVerticalCarousel() {
