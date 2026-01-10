@@ -51,38 +51,49 @@ export default function Sidebar() {
 
         <ul className="space-y-3 text-black">
           <li>
-            <Link href="/pages/Timeline" onClick={() => setOpen(false)}>
+            <Link href="/pages/TimelineTemplates/Timeline" onClick={() => setOpen(false)}>
               Timeline
             </Link>
           </li>
+          
           <li>
-            <Link href="/pages/TimelineWithList" onClick={() => setOpen(false)}>
+            <Link href="/pages/TimelineTemplates/TimelineWithList" onClick={() => setOpen(false)}>
               Timeline List
             </Link>
           </li>
+
           <li>
-            <Link href="/pages/TimelineWithImage" onClick={() => setOpen(false)}>
+            <Link href="/pages/TimelineTemplates/TimelineWithImage" onClick={() => setOpen(false)}>
               Timeline With Image
             </Link>
           </li>
+
           <li>
-            <Link href="/pages/TimelineStickyHeader" onClick={() => setOpen(false)}>
+            <Link href="/pages/TimelineTemplates/TimelineStickyHeader" onClick={() => setOpen(false)}>
               Timeline Sticky Header
             </Link>
           </li>
                     <li>
-            <Link href="/pages/TimelineVerticalCarousel" onClick={() => setOpen(false)}>
+            <Link href="/pages/TimelineTemplates/TimelineVerticalCarousel" onClick={() => setOpen(false)}>
               TimelineVerticalCarousel
             </Link>
           </li>
-                        <li>
-            <Link href="/pages/TimelineTwoColumn" onClick={() => setOpen(false)}>
+
+          <li>
+            <Link href="/pages/TimelineTemplates/TimelineTwoColumn" onClick={() => setOpen(false)}>
               TimelineTwoColumn
             </Link>
           </li>
-                             <li>
-            <Link href="/pages/TimelineWithCircularBar" onClick={() => setOpen(false)}>
+          
+          <li>
+            <Link href="/pages/TimelineTemplates/TimelineWithCircularBar" onClick={() => setOpen(false)}>
               TimelineWithCircularBar
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/pages/ContactTemplates/ContactWithMap" onClick={() => setOpen(false)}>
+              ContactWithMap
             </Link>
           </li>
         </ul>

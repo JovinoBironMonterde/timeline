@@ -13,9 +13,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+           <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css"
+        />
+      </head>
       <body className="flex min-h-screen bg-white">
         <Sidebar />
-        <main className="relative flex-1 p-0 xl:p-6">{children}</main>
+        <main className="relative flex-1 p-0 ">{children}</main>
       </body>
     </html>
   );
